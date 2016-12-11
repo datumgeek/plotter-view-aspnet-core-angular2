@@ -2,6 +2,8 @@
 
 ## Quickstart
 
+### clone project using SourceTree
+
 ### run bash shell: cd /c/a/p/plotter-view-aspnet-core-angular2
 
 ```bash
@@ -9,7 +11,23 @@ dotnet restore
 dotnet run
 ```
 
-### TODO
+## Recipe (from scratch)
+
+#### create project using yo aspnet
+
+```bash
+cd /c/a/p/plotter-view-aspnet-core-angular2
+npm install -g yo generator-aspnet bower
+yo aspnet webapi plotter-view-aspnet-core-angular2
+dotnet restore
+dotnet run
+```
+
+![image](https://cloud.githubusercontent.com/assets/22680176/21083579/81df8fe8-bfb0-11e6-882c-bf7601d45640.png)
+
+* copy contents of generated folder plotter-view-aspnet-core-angular2 up one level and delete the child folder 
+
+## TODO
 
 #### set port
 
