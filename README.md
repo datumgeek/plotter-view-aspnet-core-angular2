@@ -1,4 +1,6 @@
-# Welcome to ASP.NET Core
+# plotter-view-aspnet-core-angular2
+
+> Eample project for creating view components and webapis based on aspnet core for the angular2 flavor of plotter
 
 ## Quickstart
 
