@@ -6,8 +6,28 @@
 
 ```bash
 dotnet restore
-dotnet run --watch
+dotnet run
 ```
+
+### TODO
+
+#### set port
+
+#### enable cors
+
+#### enable dotnet file watcher
+
+#### install swagger tool chain
+
+#### run swagger ui - generate swagger json
+
+#### add swagger to web middleware to document webapi
+
+#### run swagger ui - generate apiClient.ts
+
+#### add component
+
+#### call apiClient from component
 
 ## Generated Readme Content:
 
