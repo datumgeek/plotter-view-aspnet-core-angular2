@@ -29,9 +29,35 @@ dotnet run
 
 ![image](https://cloud.githubusercontent.com/assets/22680176/21083579/81df8fe8-bfb0-11e6-882c-bf7601d45640.png)
 
-## TODO
-
 #### set port
+
+In Program.cs, specify (via UseUrls) the port on which to listen
+
+```csharp
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        var config = new ConfigurationBuilder()
+            .AddCommandLine(args)
+            .AddEnvironmentVariables(prefix: "ASPNETCORE_")
+            .Build();
+
+        var host = new WebHostBuilder()
+            .UseConfiguration(config)
+            .UseKestrel()
+            .UseUrls("http://*:9050")
+            .UseContentRoot(Directory.GetCurrentDirectory())
+            .UseIISIntegration()
+            .UseStartup<Startup>()
+            .Build();
+
+        host.Run();
+    }
+}
+```
+
+## TODO
 
 #### enable cors
 
