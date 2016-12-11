@@ -33,29 +33,7 @@ dotnet run
 
 In Program.cs, specify (via UseUrls) the port on which to listen
 
-```csharp
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        var config = new ConfigurationBuilder()
-            .AddCommandLine(args)
-            .AddEnvironmentVariables(prefix: "ASPNETCORE_")
-            .Build();
-
-        var host = new WebHostBuilder()
-            .UseConfiguration(config)
-            .UseKestrel()
-            .UseUrls("http://*:9050")
-            .UseContentRoot(Directory.GetCurrentDirectory())
-            .UseIISIntegration()
-            .UseStartup<Startup>()
-            .Build();
-
-        host.Run();
-    }
-}
-```
+![image](https://cloud.githubusercontent.com/assets/22680176/21083821/d6d3b74a-bfb5-11e6-956c-83aa3a3e2f60.png)
 
 ![image](https://cloud.githubusercontent.com/assets/22680176/21083751/ae7282f0-bfb4-11e6-951d-01539f2a9bad.png)
 
