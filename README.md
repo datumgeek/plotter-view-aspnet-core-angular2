@@ -25,9 +25,9 @@ dotnet restore
 dotnet run
 ```
 
-![image](https://cloud.githubusercontent.com/assets/22680176/21083579/81df8fe8-bfb0-11e6-882c-bf7601d45640.png)
-
 * copy contents of generated folder plotter-view-aspnet-core-angular2 up one level and delete the child folder 
+
+![image](https://cloud.githubusercontent.com/assets/22680176/21083579/81df8fe8-bfb0-11e6-882c-bf7601d45640.png)
 
 ## TODO
 
